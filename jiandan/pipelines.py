@@ -109,7 +109,7 @@ class MySqlPipeLine(object):
         else:
             Volume = int(str(item['Volume'][0]).replace(',',''))
 
-        sql = """INSERT INTO `spy500Trade`(NO,Ticker,Company,Sector,Industry,Country,MarketCap,PE,Price,ChangeV,Volume)
+        sql = """INSERT INTO `7/29spy500_tradestock`(NO,Ticker,Company,Sector,Industry,Country,MarketCap,PE,Price,ChangeV,Volume)
                             VALUE('%d','%s','%s','%s','%s','%s','%s','%f','%f','%f','%d')"""%\
                 (No,Ticker,Company,Sector,Industry,Country,MarketCap,PE,Price,ChangeV,Volume)
                # (item['No'][0],item['Ticker'][0],item['Company'][0],item['Sector'][0],item['Industry'][0],item['Country'][0],MarketCap,pe,item['Price'][0],ChangeV,Volume)
