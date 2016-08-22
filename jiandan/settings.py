@@ -15,7 +15,7 @@ SPIDER_MODULES = ['jiandan.spiders']
 NEWSPIDER_MODULE = 'jiandan.spiders'
 
 ITEM_PIPELINES = {
-    'jiandan.pipelines.MySqlPipeLine':1,
+    'jiandan.pipelines.MySqlPipeLine2':1,
 }
 DOWNLOAD_DELAY = 0
 
